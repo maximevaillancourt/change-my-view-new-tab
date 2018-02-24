@@ -13,7 +13,7 @@ $(document).ready(function(){
       </h1>
       <div>
         Posted by <a href="/u/${thing.author}">${thing.author}</a>
-        &middot; 
+        &middot;
         <a href="${thing.url}">
           view original post
         </a>
@@ -33,14 +33,32 @@ $(document).ready(function(){
     $('#poster').fadeIn();
     
     $.getJSON("https://www.reddit.com/r/changemyview/comments/" + id + ".json", function (data){
+      
       comments = data[1].data.children
+      
       $("#results").hide()
       $('#results').html('');
+
       $.each(comments, function (i, item) {
         var comment = item.data.body_html
         var author = item.data.author
-        var postcomment = `<p><b><a style="color: unset;" href="/u/${author}">${author}</a></b></p><div>${comment}</div>`
-        // ugly hack
+        
+        var postcomment = `
+          <div>
+            <p>
+              <b>
+                <a style="color: unset;" href="/u/${author}">
+                  ${author}
+                </a>
+              </b>
+            </p>
+            <div>
+              ${comment}
+            </div>
+          </div>
+        `
+        
+        // ugly hack, again
         var elem = document.createElement('textarea');
         elem.innerHTML = postcomment;
         var decoded = elem.value;
@@ -48,14 +66,14 @@ $(document).ready(function(){
       });
       $("#results").fadeIn()
 
+      // prefix relative URLs to Reddit with reddit.com domain
       $('a').each(function() {
-        const chromeExtensionURL = "chrome-extension://" + chrome.runtime.id;
-        if(this.href.match(chromeExtensionURL)) {
-          const redditPath = this.href.replace(chromeExtensionURL, "")
-          this.href = "https://reddit.com" + redditPath
+        const extensionUrl = chrome.extension.getURL("");
+        if(this.href.match(extensionUrl)) {
+          const redditPath = this.href.replace(extensionUrl, "")
+          this.href = "https://reddit.com/" + redditPath
         }
       })
-      
     })
   })
 })
