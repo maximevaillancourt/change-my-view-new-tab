@@ -3,7 +3,6 @@ var id;
 $(document).ready(function(){
   $.getJSON("https://www.reddit.com/r/changemyview/top/.json", function(json) {
     var length = json.data.children.length
-    console.log(json)
     var selected = Math.floor(Math.random() * length);
     var thing = json.data.children[selected].data
     id = thing.id
