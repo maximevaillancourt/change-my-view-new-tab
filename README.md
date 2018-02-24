@@ -8,7 +8,8 @@ The extension will randomly display a top post from [/r/changemyview](https://ww
 
 ## Download
 
-- [Google Chrome and Chromium](https://chrome.google.com/webstore/detail/rchangemyview-on-new-tab/ahgifopalblclflbkejcanjlecaghjdn) (Chrome Web Store)
+- [Google Chrome](https://chrome.google.com/webstore/detail/rchangemyview-on-new-tab/ahgifopalblclflbkejcanjlecaghjdn) (Chrome Web Store)
+- [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/r-changemyview-on-new-tab-page/) (addons.mozilla.org)
 
 ## Contributing
 All pull requests are welcome! Simply fork this repo to your account, do your changes in a new branch, then create a pull request against this repo.
@@ -17,8 +18,6 @@ All pull requests are welcome! Simply fork this repo to your account, do your ch
 
 - [ ] Handle NSFW posts (add a setting to show/hide such posts)
 - [ ] Improve formatting of blockquotes and code blocks
-- [ ] Add themes or custom colors
-- [ ] Port over to Firefox
 
 ## License
-MIT license
+[MIT license](LICENSE)
