@@ -1,0 +1,18 @@
+{
+	"name": "/r/changemyview on New Tab page",
+	"description" : "Get one of the top CMV entry (from the past 24 hours) on your New Tab page.",
+	"version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  }
+}

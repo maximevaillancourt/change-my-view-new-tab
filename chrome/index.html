@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Daily CMV</title>
+    <meta name="description" content="Daily CMV">
+    <meta name="author" content="SitePoint">
+    
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <style>
+      .card {
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+        border-radius: 3px;
+        border: none;
+        margin-bottom: 2em;
+      }
+      html, body {
+        background-color: #fafafa;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23f0f0f0' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+        line-height: 1.5;
+        font-family: 'Rubik', sans-serif;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        /* These are technically the same, but use both */
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+
+        -ms-word-break: break-all;
+        /* This is the dangerous one in WebKit, as it breaks things wherever */
+        word-break: break-all;
+        /* Instead use this non-standard one: */
+        word-break: break-word;
+
+        /* Adds a hyphen where the word breaks, if supported (No Blink) */
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+      }
+
+      .card-comment {
+        border-left:10px solid #ffc800;
+      }
+
+      b, strong {
+        font-weight: 500;
+      }
+
+    </style>
+
+    <script src="jquery-3.2.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- the actual markup -->
+    <div class="container" style="max-width: 40em;">
+      <div style="border-top:10px solid hsl(244, 0%, 20%);" class="card">
+        <div class="card-block">
+          <div id="poster">
+            Loading post...
+          </div>
+        </div>
+      </div>
+      <div id="results">
+        Loading comments...
+        <br/>
+        <br/>
+      </div>
+      <footer style="font-size:0.85em;">
+        <div><b>Enjoying this extension?</b> Consider <a target="_blank" href="https://www.paypal.me/vaillancourtmax/5usd"><b>buying me a coffee</b> ☕</a></div>
+        <br/>
+        <div style="opacity:0.75;">This extension is developed independently by <a href="https://maximevaillancourt.com/en">Maxime Vaillancourt</a>, and is not officially endorsed by or affiliated with Reddit or /r/changemyview. <a href="">See the extension's source code</a> on GitHub.</div>
+      </footer>
+    </div>
+  </body>
+</html>
