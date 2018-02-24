@@ -14,8 +14,11 @@ The extension will randomly display a top post from [/r/changemyview](https://ww
 All pull requests are welcome! Simply fork this repo to your account, do your changes in a new branch, then create a pull request against this repo.
 
 ## To do
-- [X] Chrome extension minimum viable product
-- [ ] Firefox extension minimum viable product
+
+- [ ] Handle NSFW posts (add a setting to show/hide such posts)
+- [ ] Improve formatting of blockquotes and code blocks
+- [ ] Add themes or custom colors
+- [ ] Port over to Firefox
 
 ## License
 MIT license
