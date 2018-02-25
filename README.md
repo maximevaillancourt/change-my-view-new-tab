@@ -6,18 +6,13 @@ The extension will display a random top post from [/r/changemyview](https://www.
 
 *This extension is developed independently and is not officially endorsed by or affiliated with Reddit or /r/changemyview.*
 
-## Download
+## Download the extension
 
 - [Google Chrome](https://chrome.google.com/webstore/detail/rchangemyview-on-new-tab/ahgifopalblclflbkejcanjlecaghjdn) (Chrome Web Store)
 - [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/r-changemyview-on-new-tab-page/) (addons.mozilla.org)
 
 ## Contributing
-All pull requests are welcome! Simply fork this repo to your account, do your changes in a new branch, then create a pull request against this repo.
-
-## To do
-
-- [ ] Handle NSFW posts (add a setting to show/hide such posts)
-- [ ] Reduce size of headings in posts/comments (improve hierarchy with the rest of the page)
+All pull requests are welcome! [Take a look at the current issues](https://github.com/maximevaillancourt/change-my-view-new-tab/issues) to get started. Once you find something interesting, simply fork this repo to your account, do your changes in a new branch, then create a pull request against this repo. Thanks! :)
 
 ## License
 [MIT license](LICENSE)
