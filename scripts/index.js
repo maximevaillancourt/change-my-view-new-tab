@@ -10,11 +10,11 @@
 
       let html = `
         <div class='initialism'>Top thread #${selected + 1} in the past 24 hours</div>
-          <h1 style="font-size:1.5em; font-weight:500;">
+          <h1>
               ${thing.title}
           </h1>
         <div>
-          Posted by <a href="/u/${thing.author}">${thing.author}</a>&middot;
+          Posted by <a ${thing.author === '[deleted]' ? '' : `href="/u/${thing.author}"`}>${thing.author}</a>&middot;
           <a href="${thing.url}">
             view original post
           </a>
@@ -47,7 +47,7 @@
               <div>
                 <p>
                   <b>
-                    <a style="color: unset;" href="/u/${author}">
+                    <a class="comment-author" ${author === '[deleted]' ? '' : `href="/u/${author}"`}>
                       ${unsanitizeHtml(author)}
                     </a>
                   </b>
