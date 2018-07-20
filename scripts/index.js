@@ -48,6 +48,10 @@
               return;
             }
 
+            if(author && author.trim()  === 'AutoModerator'){
+              return;
+            }
+
             if(comment && comment.trim().indexOf('[removed]') > -1){
               return;
             }
