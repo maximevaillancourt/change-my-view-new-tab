@@ -9,7 +9,7 @@ The extension will display a random top post from [/r/changemyview](https://www.
 ## Download the extension
 
 - [Google Chrome](https://chrome.google.com/webstore/detail/rchangemyview-on-new-tab/ahgifopalblclflbkejcanjlecaghjdn) (Chrome Web Store)
-- [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/r-changemyview-on-new-tab-page/) (addons.mozilla.org)
+- [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/cmv-new-tab/) (addons.mozilla.org)
 
 ## Contributing
 All pull requests are welcome! [Take a look at the current issues](https://github.com/maximevaillancourt/change-my-view-new-tab/issues) to get started. Once you find something interesting, simply fork this repo to your account, do your changes in a new branch, then create a pull request against this repo. Thanks! :)
