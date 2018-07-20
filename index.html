@@ -8,39 +8,34 @@
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-		  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<link href='http://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i' rel='stylesheet' type='text/css'>
+  <link href="styles/vendor/bootstrap-v4-0-0-alpha6.min.css" rel="stylesheet" type="text/css">
 	<link href="styles/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-<!-- the actual markup -->
-<div class="container">
-	<div id="loading-card" class="card">
-		<div class="card-block">
-			<div id="poster">
-				Loading post...
-			</div>
-		</div>
+<div>
+  <div id="poster">
+    <div class="container loading">
+      Loading post...
+    </div>
+  </div>
+
+  <div>
+    <div class="initialism text-center">
+      &mdash; Alternative views &mdash; 
+    </div>
+  	<div id="results">
+      <div class="container loading">
+        Loading comments...
+      </div>
+    </div>
 	</div>
-	<div id="results">
-		Loading comments...
+
+	<div id="footer" class="container">
+    This extension is not officially endorsed by or affiliated with Reddit or /r/changemyview.
+    <br>
+    See the extension's <a href="https://github.com/maximevaillancourt/change-my-view-new-tab">source code</a> on GitHub.
 	</div>
-	<footer>
-		<div>
-			<b>Enjoying this extension?</b> Consider
-			<a target="_blank" href="https://www.paypal.me/vaillancourtmax/5usd">
-				<b>buying me a coffee</b> ☕
-			</a></div>
-		<br/>
-		<div id="developer-info">This extension is developed independently by <a
-			href="https://maximevaillancourt.com/en">Maxime Vaillancourt</a>, and is not officially endorsed by or
-			affiliated with Reddit or /r/changemyview. <a
-				href="https://github.com/maximevaillancourt/change-my-view-new-tab">See the extension's source code</a>
-			on GitHub.
-		</div>
-	</footer>
 </div>
 
 <script src="scripts/vendor/jquery-3.2.0.min.js"></script>

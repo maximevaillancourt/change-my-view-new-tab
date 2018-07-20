@@ -9,20 +9,21 @@
       let id = thing.id;
 
       let html = `
-        <div class='initialism'>Top thread #${selected + 1} in the past 24 hours</div>
+        <div class="container">
           <h1>
-              ${thing.title}
+            ${thing.title}
           </h1>
-        <div>
-          Posted by <a ${thing.author === '[deleted]' ? '' : `href="/u/${thing.author}"`}>${thing.author}</a>&middot;
-          <a href="${thing.url}">
-            view original post
-          </a>
+          <div class='initialism'>
+            Top thread #${selected + 1} in the past 24 hours
+            &middot;
+            <a href="${thing.url}">
+              view original post
+            </a>
+          </div>
+          <div class="content content-post">
+            ${unsanitizeHtml(thing.selftext_html)}
+          </div>
         </div>
-        <hr/>
-        <p>
-          ${unsanitizeHtml(thing.selftext_html)}
-        </p>
       `;
 
       let poster = $("#poster");
@@ -43,26 +44,27 @@
             let comment = item.data.body_html;
             let author = item.data.author;
 
+            if(author && author.trim()  === 'DeltaBot'){
+              return;
+            }
+
+            if(comment && comment.trim().indexOf('[removed]') > -1){
+              return;
+            }
+
             let postcomment = `
-              <div>
-                <p>
-                  <b>
-                    <a class="comment-author" ${author === '[deleted]' ? '' : `href="/u/${author}"`}>
-                      ${unsanitizeHtml(author)}
-                    </a>
-                  </b>
-                </p>
-                <div>
+              <div class="container">
+                <div class="content content-comment">
                   ${unsanitizeHtml(comment)}
                 </div>
               </div>
             `;
 
-            results.append(
-              `<div class="card card-comment">
-                  <div class="card-block">${postcomment}</div>
-               </div>`
-            );
+            results.append(`
+              <div class="comment-wrapper">
+                 <div>${postcomment}</div>
+              </div>
+            `);
           });
           results.fadeIn();
 
@@ -85,3 +87,4 @@
   }
 
 })(window.jQuery || window.$);
+

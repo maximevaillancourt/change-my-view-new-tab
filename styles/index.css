@@ -1,9 +1,10 @@
 html, body {
-  background: #fafafa url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23f0f0f0' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
-  line-height: 1.5;
-  font-family: 'Rubik', sans-serif;
-  padding-top: 15px;
+  background: hsl(216, 30%, 98%);
+  line-height: 1.6;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  padding-top: 2vw;
   padding-bottom: 15px;
+  color: hsl(216, 10%, 20%);
 
   -ms-hyphens: auto;
   -moz-hyphens: auto;
@@ -13,30 +14,19 @@ html, body {
   word-wrap: break-word;
 }
 
-.card {
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
-  border-radius: 3px;
-  border: none;
-  margin-bottom: 2em;
+a {
+  color: #00f;
 }
 
-#loading-card {
-  border-top: 10px solid hsl(244, 0%, 20%);
-}
-
-.card-comment {
-  border-left: 10px solid #ffc800;
-}
-
-b, strong {
-  font-weight: 500;
+a:hover, a:focus {
+  color: #008;
 }
 
 blockquote {
-  border-left: 5px solid #ccc;
+  border-left: 5px solid #bdc9db;
   padding-left: 20px;
   margin: 0;
-  color: #505050;
+  color: hsl(216, 10%, 40%);
 }
 
 pre {
@@ -51,26 +41,43 @@ pre {
 }
 
 .container {
-  max-width: 40em;
+  max-width: 48rem;
+  margin-bottom: 4em;
 }
 
-footer {
+#footer {
   font-size: 0.85em;
-}
-
-.initialism {
-  margin-bottom: 0.5em;
-}
-
-.initialism h1 {
-  font-size: 1.5em;
-  font-weight: 500;
-}
-
-#developer-info {
   opacity: 0.75;
 }
 
-.comment-author {
-  color: unset;
+.initialism {
+  opacity: 0.75;
+  font-size: 0.8em;
+  margin-bottom: 2.5em;
+}
+
+h1 {
+  font-size: 1.4em;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.content {
+  background: white;
+  border-radius: 2px;
+  padding: 1.5em 1.5em 1em 1.5em;
+  margin: 0.5em -1.5em -1em -1.5em;
+  box-shadow: 0 5px 20px hsl(216, 30%, 92.5%);
+}
+
+.content-post {
+  border-top: 5px solid hsl(216, 30%, 20%);
+}
+
+.content-comment {
+  border-top: 5px solid hsl(216, 30%, 80%);
+}
+
+.loading {
+  opacity: 0.75;
 }
